@@ -1,0 +1,36 @@
+{
+  "name": "swift-aid",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@cloudinary/url-gen": "^1.21.0",
+    "@vapi-ai/web": "^2.2.5",
+    "bcryptjs": "^3.0.2",
+    "cloudinary": "^2.6.0",
+    "clsx": "^2.1.1",
+    "framer-motion": "^12.6.5",
+    "lucide-react": "^0.487.0",
+    "mongodb": "^6.15.0",
+    "mongoose": "^8.13.2",
+    "mqtt": "^5.11.0",
+    "next": "15.3.0",
+    "next-auth": "^4.24.11",
+    "onnxruntime-web": "^1.21.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-qr-code": "^2.0.15"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.3.0",
+    "tailwindcss": "^4"
+  }
+}
