@@ -118,17 +118,21 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 7. Access the application through the web or mobile interface.
 
 8. To View the Remote Patient Monitoring Dashboard
+To view the vitals of patients and doctors on the frontend, follow these steps:
+
 Navigate to the publisher directory:
 
 bash
 Copy
 cd publisher
-Run the publisher.py script to start the data publisher:
+Run the publisher.py script to start streaming patient vitals:
 
 bash
 Copy
 python publisher.py
-This is required to stream patient vitals to the frontend, allowing both patients and doctors to view real-time health data in the dashboard.
+This is necessary to allow the frontend to display the real-time vitals of patients and doctors.
+
+
 
 
 ---
