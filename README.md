@@ -71,6 +71,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ---
 
+
+
 ## **Installation**
 
 ### **Prerequisites**
@@ -114,6 +116,20 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 6. Start any necessary Python services (e.g., for the burn classification model).
 
 7. Access the application through the web or mobile interface.
+
+8. To View the Remote Patient Monitoring Dashboard
+Navigate to the publisher directory:
+
+bash
+Copy
+cd publisher
+Run the publisher.py script to start the data publisher:
+
+bash
+Copy
+python publisher.py
+This is required to stream patient vitals to the frontend, allowing both patients and doctors to view real-time health data in the dashboard.
+
 
 ---
 
