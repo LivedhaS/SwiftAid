@@ -1,36 +1,149 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# SwiftAid: Instant Emergency & Health Support System
 
-First, run the development server:
+## **Project Overview**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**SwiftAid** is an AI-powered healthcare platform designed to revolutionize emergency response and remote patient monitoring (RPM). The system addresses the growing challenge of delayed medical intervention and unmanaged chronic conditions by offering real-time health tracking, intelligent diagnostics, and instant emergency alerts using wearable biomedical devices and machine learning. SwiftAid aims to provide continuous care and immediate intervention, saving lives, reducing complications, and transforming healthcare from reactive to proactive.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## **Features**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Continuous Automated Monitoring**: Tracks vitals like heart rate, SpO₂, EEG, and movement using biomedical wearables. Real-time data transmission via secure MQTT ensures uninterrupted health tracking.
+* **Real-Time Emergency Alerts & AI Diagnosis**: Uses machine learning models like MobileNetV2 to classify medical conditions such as burns and wounds. Immediate alerts notify emergency contacts and medical professionals.
+* **Geolocation-Based SOS**: Instantly shares the patient's location with emergency contacts during crises, enabling faster emergency support.
+* **Voice-Based Conversational Agent**: Interacts with users to gather symptoms and provide relevant assistance, improving accessibility and user engagement.
+* **Nearby Hospitals & Trauma Centers Finder**: Helps users locate nearby healthcare facilities, trauma centers, and clinics based on specialty and proximity.
+* **Smart Health Profile**: Stores user's medical info and emergency contacts. Auto-generates a QR code for easy access during emergencies.
+* **Doctor Dashboard for Live Monitoring**: Real-time access to patient vitals and alerts for healthcare professionals.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## **Architecture**
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. **RPM Architecture**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+* **Biomedical Device Ecosystem**: Collects data from wearable sensors like heart rate, SpO₂, and EEG.
+* **Secure MQTT Broker**: Real-time data transmission using MQTT protocol, ensuring minimal latency and high reliability.
+* **Role-Based Access Control**: Uses the **Supabase** framework for secure data access, providing tiered roles for patients, doctors, and nurses.
+* **MongoDB Storage**: Stores patient health records and metadata in a secure **MongoDB NoSQL database**.
 
-## Deploy on Vercel
+### 2. **Model Architecture**
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+* **MobileNetV2**: Used for image classification tasks, such as burn or wound detection. Its lightweight architecture provides high performance without compromising efficiency.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+
+## **Technologies Used**
+
+* **MQTT**: For device communication and real-time data transmission.
+* **MongoDB**: For database storage of health records and patient data.
+* **Expo**: For mobile app development.
+* **Next.js**: For the provider dashboard.
+* **Next Auth**: For role-based authentication and secure user management.
+* **MobileNetV2**: For real-time image classification of medical emergencies.
+
+---
+
+## **Next.js Setup Instructions**
+
+This project is built using **Next.js** and bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
+### **Getting Started**
+
+1. **Install dependencies**:
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
+
+2. **Run the development server**:
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+
+3. Open your browser and navigate to [http://localhost:3000](http://localhost:3000) to view the project.
+
+You can start editing the page by modifying `app/page.js`, and the page will auto-update as you make changes.
+
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load **Geist**, a font family for Vercel.
+
+---
+
+
+## **Installation**
+
+### **Prerequisites**
+
+* Node.js (for running the backend server)
+* MongoDB (for storing health records)
+* Python (for machine learning tasks like burn classification)
+
+### **Steps to Install**
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/LivedhaS/SwiftAid.git
+   ```
+
+2. Navigate into the project directory:
+
+   ```bash
+   cd SwiftAid
+   ```
+
+3. Install backend dependencies:
+
+   ```bash
+   npm install
+   ```
+
+4. Install Python dependencies (if applicable):
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Run the Node.js server:
+
+   ```bash
+   node server.js
+   ```
+
+6. Start any necessary Python services (e.g., for the burn classification model).
+
+7. Access the application through the web or mobile interface.
+
+---
+
+## **Usage**
+
+* Upload burn images or input symptoms to get instant classification and treatment recommendations.
+* Use the voice agent for hands-free symptom checking and advice during emergencies.
+* Monitor your health remotely using connected wearable devices.
+* Access health information quickly via your **Smart Health Profile** and **QR code**.
+
+---
+
+### **Team Members**:
+
+* **Team Leader**: R. Sanjana, CSE, 3rd Year
+* **Team Member 1**: Jayashree S, CSE, 3rd Year
+* **Team Member 2**: Livedha S, CSE, 3rd Year
+
+---
+
