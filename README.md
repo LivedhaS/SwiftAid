@@ -1,9 +1,12 @@
 
+
 # SwiftAid: Instant Emergency & Health Support System
 
 ## **Project Overview**
 
 **SwiftAid** is an AI-powered healthcare platform designed to revolutionize emergency response and remote patient monitoring (RPM). The system addresses the growing challenge of delayed medical intervention and unmanaged chronic conditions by offering real-time health tracking, intelligent diagnostics, and instant emergency alerts using wearable biomedical devices and machine learning. SwiftAid aims to provide continuous care and immediate intervention, saving lives, reducing complications, and transforming healthcare from reactive to proactive.
+
+You can access the live version of SwiftAid [here](https://swift-aid-ruby.vercel.app/).
 
 ---
 
@@ -16,21 +19,6 @@
 * **Nearby Hospitals & Trauma Centers Finder**: Helps users locate nearby healthcare facilities, trauma centers, and clinics based on specialty and proximity.
 * **Smart Health Profile**: Stores user's medical info and emergency contacts. Auto-generates a QR code for easy access during emergencies.
 * **Doctor Dashboard for Live Monitoring**: Real-time access to patient vitals and alerts for healthcare professionals.
-
----
-
-## **Architecture**
-
-### 1. **RPM Architecture**
-
-* **Biomedical Device Ecosystem**: Collects data from wearable sensors like heart rate, SpO₂, and EEG.
-* **Secure MQTT Broker**: Real-time data transmission using MQTT protocol, ensuring minimal latency and high reliability.
-* **Role-Based Access Control**: Uses the **Supabase** framework for secure data access, providing tiered roles for patients, doctors, and nurses.
-* **MongoDB Storage**: Stores patient health records and metadata in a secure **MongoDB NoSQL database**.
-
-### 2. **Model Architecture**
-
-* **MobileNetV2**: Used for image classification tasks, such as burn or wound detection. Its lightweight architecture provides high performance without compromising efficiency.
 
 ---
 
@@ -82,7 +70,6 @@ You can start editing the page by modifying `app/page.js`, and the page will aut
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load **Geist**, a font family for Vercel.
 
 ---
-
 
 ## **Installation**
 
@@ -139,11 +126,16 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ---
 
+
 ### **Team Members**:
 
 * **Team Leader**: R. Sanjana, CSE, 3rd Year
 * **Team Member 1**: Jayashree S, CSE, 3rd Year
 * **Team Member 2**: Livedha S, CSE, 3rd Year
+
+---
+
+You can access the live version of SwiftAid [here](https://swift-aid-ruby.vercel.app/).
 
 ---
 
