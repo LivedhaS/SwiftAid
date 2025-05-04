@@ -1,5 +1,4 @@
 
-
 # SwiftAid: Instant Emergency & Health Support System
 
 ## **Project Overview**
@@ -71,8 +70,6 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 ---
 
-
-
 ## **Installation**
 
 ### **Prerequisites**
@@ -115,25 +112,23 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 6. Start any necessary Python services (e.g., for the burn classification model).
 
-7. Access the application through the web or mobile interface.
+7. **To View the Remote Patient Monitoring Dashboard**
 
-8. To View the Remote Patient Monitoring Dashboard
-To view the vitals of patients and doctors on the frontend, follow these steps:
+   To view the vitals of patients and doctors on the frontend, follow these steps:
 
-Navigate to the publisher directory:
+   * **Navigate to the `publisher` directory**:
 
-bash
-Copy
-cd publisher
-Run the publisher.py script to start streaming patient vitals:
+     ```bash
+     cd publisher
+     ```
 
-bash
-Copy
-python publisher.py
-This is necessary to allow the frontend to display the real-time vitals of patients and doctors.
+   * **Run the `publisher.py` script** to start streaming patient vitals:
 
+     ```bash
+     python publisher.py
+     ```
 
-
+   This is necessary to allow the frontend to display the real-time vitals of patients and doctors.
 
 ---
 
@@ -144,12 +139,8 @@ This is necessary to allow the frontend to display the real-time vitals of patie
 * Monitor your health remotely using connected wearable devices.
 * Access health information quickly via your **Smart Health Profile** and **QR code**.
 
-
-
-
 ---
 
 You can access the live version of SwiftAid [here](https://swift-aid-ruby.vercel.app/).
 
 ---
-
