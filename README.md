@@ -124,14 +124,8 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 * Monitor your health remotely using connected wearable devices.
 * Access health information quickly via your **Smart Health Profile** and **QR code**.
 
----
 
 
-### **Team Members**:
-
-* **Team Leader**: R. Sanjana, CSE, 3rd Year
-* **Team Member 1**: Jayashree S, CSE, 3rd Year
-* **Team Member 2**: Livedha S, CSE, 3rd Year
 
 ---
 
